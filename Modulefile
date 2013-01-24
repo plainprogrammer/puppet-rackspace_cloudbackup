@@ -1,10 +1,10 @@
-name    'bare_module'
+name    'plainprogrammer/rackspace_cloudbackup'
 version '0.1.0'
-source 'git://github.com/plainprogrammer/bare_module'
+source 'git://github.com/plainprogrammer/puppet-rackspace_cloudbackup'
 author 'James Thompson'
 license 'MIT'
-summary 'Bare Module'
-description 'A Bare Module, Ready for Development'
-project_page 'http://github.com/plainprogrammer/bare_module'
+summary 'Rackspace Cloud Backup Drive Client'
+description 'A module for installing and managing the Rackspace Cloud Backup Drive Client'
+project_page 'http://github.com/plainprogrammer/puppet-rackspace_cloudbackup'
 
 ## Add dependencies, if any:

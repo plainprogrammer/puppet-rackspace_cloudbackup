@@ -1,9 +1,9 @@
-Bare Module
-===========
+Racksapce Cloud Backup
+======================
 
-[![Build Status](https://travis-ci.org/plainprogrammer/bare_module.png)](https://travis-ci.org/plainprogrammer/bare_module)
+[![Build Status](https://travis-ci.org/plainprogrammer/puppet-rackspace_cloudbackup.png)](https://travis-ci.org/plainprogrammer/puppet-rackspace_cloudbackup)
 
-A bare module ready for further development.
+A module for installing and managing the Rackspace Cloud Backup Drive Client.
 
 Platforms
 ---------

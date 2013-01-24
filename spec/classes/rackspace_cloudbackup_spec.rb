@@ -1,6 +1,6 @@
 #!/usr/bin/env rspec
 require 'spec_helper'
 
-describe 'bare module' do
+describe 'rackspace_cloudbackup' do
   it 'tests its functionality'
 end
