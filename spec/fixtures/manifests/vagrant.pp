@@ -1,2 +1,5 @@
-# Add a reasonable example usage of your module here for Vagrant to do its
-# reality check with.
+class {'rackspace_cloudbackup':
+  api_username  => 'USERNAME',
+  api_key       => 'VALID_KEY',
+  use_latest    => true
+}

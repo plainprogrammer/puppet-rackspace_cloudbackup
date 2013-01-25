@@ -12,10 +12,13 @@ class rackspace_cloudbackup::debian () {
     require => Exec['add_apt_key']
   }
 
-  package {'driveclient':
-    ensure  => $::rackspace_cloudbackup::package_ensure,
+  exec {'update_apt_sources':
+    command => '/usr/bin/apt-get update -qq',
     require => Exec['add_apt_source']
   }
 
-  # TODO configure driveclient
+  package {'driveclient':
+    ensure  => $::rackspace_cloudbackup::package_ensure,
+    require => Exec['update_apt_sources']
+  }
 }

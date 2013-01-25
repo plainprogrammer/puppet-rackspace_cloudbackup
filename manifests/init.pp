@@ -37,9 +37,15 @@ class rackspace_cloudbackup (
     }
   }
 
+  exec {'configure-driveclient':
+    command => "/usr/local/bin/driveclient --configure --username ${api_username} --apikey ${api_key}",
+    onlyif  => "/usr/bin/test `/bin/grep -c ${api_username} /etc/driveclient/bootstrap.json` -ne 1",
+    require => Package['driveclient']
+  }
+
   service {'driveclient':
     ensure  => 'running',
     enable  => true,
-    require => Package['driveclient']
+    require => Exec['configure-driveclient']
   }
 }
